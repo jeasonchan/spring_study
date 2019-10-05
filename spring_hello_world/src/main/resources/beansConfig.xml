@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--默认是单例的实例-->
+    <bean id="chinese" class="Chinese">
+        <property name="name" value="jeasonChan"/>
+    </bean>
+
+    <!--多实例的bean-->
+    <bean id="multiChinese" class="Chinese" scope="prototype">
+        <property name="name" value="multiChinses"/>
+    </bean>
+
+
+</beans>
