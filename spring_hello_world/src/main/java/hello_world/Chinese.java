@@ -1,3 +1,5 @@
+package hello_world;
+
 import lombok.Getter;
 import lombok.Setter;
 

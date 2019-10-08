@@ -5,12 +5,12 @@
 
 
     <!--默认是单例的实例-->
-    <bean id="chinese" class="Chinese">
+    <bean id="chinese" class="hello_world.Chinese">
         <property name="name" value="jeasonChan"/>
     </bean>
 
     <!--多实例的bean-->
-    <bean id="multiChinese" class="Chinese" scope="prototype">
+    <bean id="multiChinese" class="hello_world.Chinese" scope="prototype">
         <property name="name" value="multiChinses"/>
     </bean>
 
