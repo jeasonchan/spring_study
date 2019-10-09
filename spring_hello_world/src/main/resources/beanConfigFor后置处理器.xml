@@ -2,15 +2,14 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-       <!--default-init-method="init"-->
-       <!--default-destroy-method="destroy">-->
 
-    <bean id="chinese" class="初始化和销毁回调.Chinese" init-method="init" destroy-method="destroy">
-
+    <bean id="chinese" class="初始化和销毁回调.Chinese">
     </bean>
 
     <bean id="american" class="初始化和销毁回调.American">
+    </bean>
 
+    <bean id="beanPostProcessor" class="后置处理器.PostProcessorExample">
     </bean>
 
 </beans>
